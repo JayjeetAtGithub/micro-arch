@@ -16,7 +16,7 @@ int main() {
     }
 
     for (int64_t i = 0; i < 1e3; i++) {
-        calc_sum(arr, len);
+        std::cout << calc_sum(arr, len) << std::endl;
     }
 
     delete[] arr;
