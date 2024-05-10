@@ -15,7 +15,7 @@ int main() {
         arr[i] = i;
     }
 
-    for (int64_t i = 0; i < 1e2; i++) {
+    for (int64_t i = 0; i < 4*1e2; i++) {
         std::cout << i << ": ";
         std::cout << calc_sum(arr, len) << std::endl;
     }
