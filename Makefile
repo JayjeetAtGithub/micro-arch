@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -Wall -Wextra -pedantic -std=c++11 --no-omit-frame-pointer
+CFLAGS = -Wall -Wextra -pedantic -std=c++11 --no-omit-frame-pointer -O2 -g
 
 all: loop1
 
