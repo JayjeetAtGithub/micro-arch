@@ -7,11 +7,12 @@ int main() {
         arr[i] = i;
     }
 
+    int64_t sum = 0;
     for (int64_t i = 0; i < len; i++) {
-        int64_t v1 = arr[i] + 1;
-        int64_t v2 = v1 * 4;
-        int64_t v3 = v2 / 2;
+        sum += arr[i];
     }
+
+    std::cout << "Sum: " << sum << std::endl;
 
     delete[] arr;
 }
