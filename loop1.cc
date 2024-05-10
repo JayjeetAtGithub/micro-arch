@@ -2,8 +2,8 @@
 
 int main() {
     int64_t len = 1e10;
-    int *arr = new int[len];
-    for (int i = 0; i < len; i++) {
+    int64_t *arr = new int64_t[len];
+    for (int64_t i = 0; i < len; i++) {
         arr[i] = i;
     }
 
