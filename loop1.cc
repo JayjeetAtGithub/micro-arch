@@ -1,46 +1,20 @@
-// #include <iostream>
-
-// int64_t calc_sum(int64_t *arr, int64_t len) {
-//     int64_t sum = 0;
-//     for (int64_t i = 0; i < len; i++) {
-//         sum += arr[i];
-//     }
-//     return sum;
-// }
-
-// int main() {
-//     int64_t len = 1e8;
-//     int64_t *arr = new int64_t[len];
-//     for (int64_t i = 0; i < len; i++) {
-//         arr[i] = i;
-//     }
-
-//     for (int64_t i = 0; i < 4*1e2; i++) {
-//         std::cout << i << ": ";
-//         std::cout << calc_sum(arr, len) << std::endl;
-//     }
-
-//     delete[] arr;
-// }
-
 #include <iostream>
 
+int64_t calc_sum(int64_t *arr, int64_t len) {
+    int64_t sum = 0;
+    for (int64_t i = 0; i < len; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+
 int main() {
-    // Create two arrays of integers
-    int64_t array1[10000000];
-    int64_t array2[10000000];
-
-    // Initialize the arrays
-    for (int64_t i = 0; i < 10000000; i++) {
-        array1[i] = i;
-        array2[i] = i * 2;
+    int64_t len = 1e8;
+    int64_t *arr = new int64_t[len];
+    for (int64_t i = 0; i < len; i++) {
+        int64_t val = arr[i];
+        val = val + 1;  
+        arr[i] = val;
     }
-
-    // Access the elements of the arrays in a loop
-    for (int64_t i = 0; i < 10000000; i++) {
-        int64_t value1 = array1[i];
-        int64_t value2 = array2[i];
-    }
-
-    return 0;
+    delete[] arr;
 }
