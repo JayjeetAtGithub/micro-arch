@@ -7,9 +7,10 @@ int main() {
         arr[i] = i;
     }
 
-    for (int i = 0; i < len; i++) {
-        int v = arr[i] + 1;
-        std::cout << v << std::endl;
+    for (int64_t i = 0; i < len; i++) {
+        int64_t v1 = arr[i] + 1;
+        int64_t v2 = v1 * 4;
+        int64_t v3 = v2 / 2;
     }
 
     delete[] arr;
