@@ -1,8 +1,9 @@
 #include <iostream>
 
 int main() {
-    int *arr = new int[10];
-    for (int i = 0; i < 1000000; i++) {
+    int32_t len = 1e6;
+    int *arr = new int[len];
+    for (int i = 0; i < len; i++) {
         arr[i] = i;
     }
 
