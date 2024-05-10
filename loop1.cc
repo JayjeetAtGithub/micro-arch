@@ -7,8 +7,7 @@ int main() {
         arr[i] = i;
     }
 
-    read every element in the array
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < len; i++) {
         int v = arr[i] + 1;
         std::cout << v << std::endl;
     }
