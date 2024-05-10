@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-    int32_t len = 1e8;
+    int32_t len = 1e9;
     int *arr = new int[len];
     for (int i = 0; i < len; i++) {
         arr[i] = i;
