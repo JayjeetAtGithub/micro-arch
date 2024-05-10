@@ -15,7 +15,7 @@ int main() {
         arr[i] = i;
     }
 
-    for (int64_t i = 0; i < 10e5; i++) {
+    for (int64_t i = 0; i < 1e3; i++) {
         calc_sum(arr, len);
     }
 
