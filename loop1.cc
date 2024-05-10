@@ -12,5 +12,7 @@ int main() {
     //     int v = arr[i] + 1;
     //     std::cout << v << std::endl;
     // }
+
+    delete[] arr;
 }
 
