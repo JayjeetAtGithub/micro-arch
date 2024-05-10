@@ -16,6 +16,7 @@ int main() {
     }
 
     for (int64_t i = 0; i < 1e3; i++) {
+        std::cout << i << ": ";
         std::cout << calc_sum(arr, len) << std::endl;
     }
 
