@@ -27,19 +27,19 @@
 
 int main() {
     // Create two arrays of integers
-    int array1[10000000];
-    int array2[10000000];
+    int64_t array1[10000000];
+    int64_t array2[10000000];
 
     // Initialize the arrays
-    for (int i = 0; i < 10000000; i++) {
+    for (int64_t i = 0; i < 10000000; i++) {
         array1[i] = i;
         array2[i] = i * 2;
     }
 
     // Access the elements of the arrays in a loop
-    for (int i = 0; i < 10000000; i++) {
-        int value1 = array1[i];
-        int value2 = array2[i];
+    for (int64_t i = 0; i < 10000000; i++) {
+        int64_t value1 = array1[i];
+        int64_t value2 = array2[i];
     }
 
     return 0;
